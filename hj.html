@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Про компанію</title>
+  <style>
+  	body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Навигация */
+nav {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+/* Основной контент */
+section {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+/* Поле ввода и кнопка */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CA250;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Тест сайт практика</h1>
+    <p>практ 19</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="mailto:example@email.com">Контакти</a></li>
+      <li><a href="https://t.me/yourusername">Резюме</a></li>
+      <li><a href="#about">Збірка анекдотів</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>Анекдоти</h2>
+    <p>Купив мужик шляпу, а вона йому як раз</p>
+    <p>Йшов ведмідь по лісу і побачив машину. Сів в неї і згорів</p>
+  </section>
+
+   <input type="text" placeholder="Відгуки, побажання">
+    <button type="submit" onclick="showMessage()">Відправити</button>
+     <div id="message"></div>
+    <script>
+    function showMessage() {
+      document.getElementById('message').textContent = "Відправлено!";
+    }
+  </script>
+
+  <footer>
+    <p>© 2025 Практ19 Колісник</p>
+  </footer>
+
+</body>
+</html>
